@@ -12,8 +12,9 @@ def test_read_animals():
     assert dates == ref_dates
 
 def test_mean():
-    ref_counts = ['36', '25', '26', '31', '20']
+    ref_counts = [36, 25, 26, 31, 20]
 
-    m = animals.mean([36, 25, 26, 31, 20])
-
-    assert m == 27.6
+    assert animals.mean(ref_counts) == 27.6
+    assert animals.mean([1.5, 3.2])
+    assert animals.mean([])
+    assert animals.mean([3])
