@@ -72,6 +72,7 @@ def mean(nums):
 
     """
     # fill this in
+    return float(sum(nums)) / len(nums)
 
 
 def filter_animals_by_kind(kind, date, time, species, count):
