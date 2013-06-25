@@ -16,4 +16,4 @@ def test_mean():
 
     m = animals.mean([36, 25, 26, 31, 20])
 
-    assert m = 27.6
+    assert m == 27.6
